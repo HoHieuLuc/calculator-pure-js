@@ -183,5 +183,5 @@ const onButtonClick = (type: Button['type'], label: Button['label']) => {
     }
 }
 // tsc .\temp.ts -t es2022 
-// xóa dòng export{} này bên file temp.js sau khi compile
+// delete export{} from index.js after compiling
 export { }

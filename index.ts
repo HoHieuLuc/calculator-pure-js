@@ -162,7 +162,8 @@ const onButtonClick = (type: Button['type'], label: Button['label']) => {
                 if (result === Infinity || result === -Infinity) {
                     currentResultDOM.textContent = 'Overflow error';
                 } else {
-                    currentResultDOM.textContent = `${Math.round(result * 100) / 100}`;
+                    const BILLION = 1000000000;
+                    currentResultDOM.textContent = `${Math.round(result * BILLION) / BILLION}`;
                 }
             } else {
                 currentResultDOM.textContent = 'Syntax error';

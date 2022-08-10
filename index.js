@@ -94,7 +94,6 @@ const renderButton = (data) => {
         `;
     }).join('');
 };
-
 renderButton(allButtons);
 
 const deleteLast = () => {
@@ -116,7 +115,6 @@ const prevExpressionDOM = document.querySelector('#prev-expression');
 const currentResultDOM = document.querySelector('#result');
 
 let isEqualButtonPreviouslyClicked = false;
-
 const onButtonClick = (type, label) => {
     // if the equal button is previously clicked
     // and the clicked button's type is "number"
@@ -137,7 +135,8 @@ const onButtonClick = (type, label) => {
                     currentResultDOM.textContent = 'Overflow error';
                 }
                 else {
-                    currentResultDOM.textContent = `${Math.round(result * 100) / 100}`;
+                    const BILLION = 1000000000;
+                    currentResultDOM.textContent = `${Math.round(result * BILLION) / BILLION}`;
                 }
             }
             else {

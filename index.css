@@ -17,6 +17,21 @@
     height: 50px;
 }
 
+.button-long {
+    background-color: #e62121;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 132px;
+    height: 50px;
+}
+
 .button:hover {
     filter: brightness(70%);
 }
@@ -44,10 +59,12 @@
     margin: 4px 2px;
     cursor: pointer;
     height: 100px;
+    margin-top: 50%;
 }
 
 #result {
-    font-size: 2rem;
+    font-size: 1.3rem;
+    font-weight: bold;
 }
 
 .button-container {
@@ -60,4 +77,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.cursor {
+    text-decoration: underline;
 }
